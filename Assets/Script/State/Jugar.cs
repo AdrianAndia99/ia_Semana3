@@ -23,9 +23,10 @@ public class Jugar : Humano
     {
         if (_DataAgent.Energy.value < 0.25f)
         {
-            _StateMachine.ChangeState(TypeState.Dormir);
+            _StateMachine.ChangeState(TypeState.Comer);
         }
-        else {
+        else 
+        {
             _DataAgent.DiscountEnergy();
         }
 
